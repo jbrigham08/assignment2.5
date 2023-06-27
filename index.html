@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS DOM and Events</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <main>
+            <p>Calculate by entering fields below</p> 
+
+            <div class="inputs">
+                <div>
+                    <h1>Input 1</h1>          
+                    <input type="number" data-first-num="first" id="number1" name="number1" required>
+                </div> 
+                <div>
+                    <h1>Input 2</h1> 
+                    <input type="number" data-second-num="second" id="number2" name="number2" required>
+                </div>
+            </div>
+            <hr>
+                <p id="error-msg">Choose a button<br>to compute</p>
+                
+            <div class="container"> 
+                <button type="submit" id="addition" data-add-numbers="+">+</button>
+                <button type="submit" id="subtraction" data-subtract-numbers="-">-</button>
+                <button type="submit" id="multiplication" data-multiply-numbers="*">*</button>
+                <button type="submit" id="division" data-divide-numbers="/">/</button>
+                <button type="submit" id="modulo" data-modulo-numbers="%">%</button>
+            </div> 
+            <hr>  
+            <div class="answerSection">
+                <!-- Span -->
+                <p>Answer: <span id="result"></span></p>
+                <!-- Reset -->
+                <button class="resetBtn" id="reset" data-reset-btn="reset">RESET</button>
+                <script src="./index.js"></script>
+            </div>
+        </main>
+    </body>
+</html>
